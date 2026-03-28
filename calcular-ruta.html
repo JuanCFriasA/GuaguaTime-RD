@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Juan Carlos Frias Alfonso">
+        <meta name="description" content="Guaguatime RD es una aplicacion web que permite escoger rutas de transporte publico en la ciudad de Santo Domingo, Republica Dominicana.">
+        <meta name="keywords" content="guaguatime, guagua, transporte publico, santo domingo, republica dominicana">
+        <title>Guaguatime RD - Inicio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+                <header>
+            <div class="header">
+                <img src="img/logo.png" height="128" alt="Logo de GuaguaTime RD" class="logo" title="logo">
+               
+            </div>
+            <div class="nav">
+                <nav aria-label="Navegación principal">
+                    <a href="index.html">Inicio</a>
+                    <a href="calcular-ruta.html">Buscar Ruta</a>
+                    <a href="rutas-favoritas.html">Rutas Favoritas</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="calcular-section">
+                <h2>Calcular Ruta</h2>
+
+                <div class="alertas-bar">
+                    <strong>⚠️ Condiciones activas:</strong>
+                    <button class="alerta-btn" onclick="toggleAlerta(this, 'lluvia')">🌧️ Lluvia</button>
+                    <button class="alerta-btn" onclick="toggleAlerta(this, 'hora_pico')">🚦 Hora Pico</button>
+                    <button class="alerta-btn" onclick="toggleAlerta(this, 'paro')">⛔ Paro</button>
+                    <button class="alerta-btn" onclick="toggleAlerta(this, 'feriado')">🎉 Feriado</button>
+                </div>
+
+                <form id="form-ruta" onsubmit="calcularRuta(event)">
+                    <label for="origen">Origen:</label>
+                    <select id="origen" required>
+                        <option value="">-- Selecciona --</option>
+                        <option>Villa Consuelo</option>
+                        <option>Los Mina</option>
+                        <option>Cristo Rey</option>
+                        <option>Arroyo Hondo</option>
+                        <option>Ensanche Ozama</option>
+                        <option>Gazcue</option>
+                        <option>Herrera</option>
+                        <option>Piantini</option>
+                    </select>
+
+                    <label for="destino">Destino:</label>
+                    <select id="destino" required>
+                        <option value="">-- Selecciona --</option>
+                        <option>Centro</option>
+                        <option>Zona Colonial</option>
+                        <option>UASD</option>
+                        <option>Bella Vista</option>
+                        <option>Las Americas</option>
+                        <option>Naco</option>
+                        <option>Av. 27 de Febrero</option>
+                        <option>Alma Rosa</option>
+                    </select>
+
+                    <br>
+                    <label>Ordenar por:</label>
+                    <select id="criterio">
+                        <option value="tiempo">⏱ Tiempo</option>
+                        <option value="costo">💵 Costo</option>
+                        <option value="transbordos">🔄 Transfers</option>
+                    </select>
+
+                    <br><br>
+                    <button type="submit" class="btn-calcular">Buscar Rutas 🚌</button>
+                </form>
+
+                <div id="resultados"></div>
+            </section>
+        </main>
+                <footer>
+            <p>© 2026 GuaguaTime RD &mdash; Juan Carlos Frias A.</p>
+        </footer>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+{
+    "lluvia":    { "tiempo_pct": 30,  "costo_extra": 20 },
+    "hora_pico": { "tiempo_pct": 50,  "costo_extra": 0  },
+    "paro":      { "tiempo_pct": 80,  "costo_extra": 50 },
+    "feriado":   { "tiempo_pct": -15, "costo_extra": 0  }
+}

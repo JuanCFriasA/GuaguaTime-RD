@@ -1,0 +1,103 @@
+[
+    {
+        "id": "r1",
+        "nombre": "Villa Consuelo → Centro",
+        "origen": "Villa Consuelo",
+        "destino": "Centro",
+        "tramos": [
+            { "desde": "Villa Consuelo", "hasta": "Parque Independencia", "transporte": "🚌 Guagua", "tiempo_min": 18, "costo": 35 },
+            { "desde": "Parque Independencia", "hasta": "Centro", "transporte": "🚕 Carro Público", "tiempo_min": 10, "costo": 25 }
+        ]
+    },
+    {
+        "id": "r2",
+        "nombre": "Los Mina → Zona Colonial",
+        "origen": "Los Mina",
+        "destino": "Zona Colonial",
+        "tramos": [
+            { "desde": "Los Mina", "hasta": "Máximo Gómez", "transporte": "🚌 Guagua", "tiempo_min": 25, "costo": 35 },
+            { "desde": "Máximo Gómez", "hasta": "Centro", "transporte": "🚕 Concho", "tiempo_min": 10, "costo": 25 },
+            { "desde": "Centro", "hasta": "Zona Colonial", "transporte": "🚗 Concho", "tiempo_min": 5, "costo": 25 }
+        ]
+    },
+    {
+        "id": "r3",
+        "nombre": "Cristo Rey → UASD",
+        "origen": "Cristo Rey",
+        "destino": "UASD",
+        "tramos": [
+            { "desde": "Cristo Rey", "hasta": "Centro Olímpico", "transporte": "🚌 Guagua", "tiempo_min": 12, "costo": 35 },
+            { "desde": "Centro Olímpico", "hasta": "UASD", "transporte": "🏍️ Motoconcho", "tiempo_min": 10, "costo": 50 }
+        ]
+    },
+    {
+        "id": "r4",
+        "nombre": "Arroyo Hondo → Bella Vista",
+        "origen": "Arroyo Hondo",
+        "destino": "Bella Vista",
+        "tramos": [
+            { "desde": "Arroyo Hondo", "hasta": "Av. 27 de Febrero", "transporte": "🚕 Carro Público", "tiempo_min": 20, "costo": 25 },
+            { "desde": "Av. 27 de Febrero", "hasta": "Bella Vista", "transporte": "🚗 Concho", "tiempo_min": 8, "costo": 50 }
+        ]
+    },
+    {
+        "id": "r5",
+        "nombre": "Ensanche Ozama → Las Américas",
+        "origen": "Ensanche Ozama",
+        "destino": "Las Américas",
+        "tramos": [
+            { "desde": "Ensanche Ozama", "hasta": "Centro", "transporte": "🚌 Guagua", "tiempo_min": 20, "costo": 35 },
+            { "desde": "Centro", "hasta": "Las Américas", "transporte": "🚌 Guagua", "tiempo_min": 25, "costo": 35 }
+        ]
+    },
+    {
+        "id": "r6",
+        "nombre": "Gazcue → Naco",
+        "origen": "Gazcue",
+        "destino": "Naco",
+        "tramos": [
+            { "desde": "Gazcue", "hasta": "Centro", "transporte": "🚗 Concho", "tiempo_min": 8, "costo": 25 },
+            { "desde": "Centro", "hasta": "Naco", "transporte": "🚕 Carro Público", "tiempo_min": 10, "costo": 25 }
+        ]
+    },
+    {
+        "id": "r7",
+        "nombre": "Herrera → Av. 27 de Febrero",
+        "origen": "Herrera",
+        "destino": "Av. 27 de Febrero",
+        "tramos": [
+            { "desde": "Herrera", "hasta": "Av. 27 de Febrero", "transporte": "🚌 Guagua", "tiempo_min": 30, "costo": 35 }
+        ]
+    },
+    {
+        "id": "r8",
+        "nombre": "Piantini → Alma Rosa",
+        "origen": "Piantini",
+        "destino": "Alma Rosa",
+        "tramos": [
+            { "desde": "Piantini", "hasta": "Centro Olímpico", "transporte": "🚕 Carro Público", "tiempo_min": 10, "costo": 25 },
+            { "desde": "Centro Olímpico", "hasta": "Centro", "transporte": "🚌 Guagua", "tiempo_min": 12, "costo": 35 },
+            { "desde": "Centro", "hasta": "Alma Rosa", "transporte": "🚌 Guagua", "tiempo_min": 20, "costo": 35 }
+        ]
+    },
+
+   
+    {
+        "id": "r9",
+        "nombre": "Av. 27 de Febrero → Centro",
+        "origen": "Av. 27 de Febrero",
+        "destino": "Centro",
+        "tramos": [
+            { "desde": "Av. 27 de Febrero", "hasta": "Centro", "transporte": "🚌 Guagua", "tiempo_min": 15, "costo": 35 }
+        ]
+    },
+    {
+        "id": "r10",
+        "nombre": "Centro Olímpico → Máximo Gómez",
+        "origen": "Centro Olímpico",
+        "destino": "Máximo Gómez",
+        "tramos": [
+            { "desde": "Centro Olímpico", "hasta": "Máximo Gómez", "transporte": "🚕 Concho", "tiempo_min": 10, "costo": 25 }
+        ]
+    }
+]
